@@ -1,0 +1,50 @@
+{
+  "orderHeader": {
+    "orderID": #orderID,
+    "orderType": "Movement",
+    "orderSubType": "TRQ",
+    "eventType": "RTF",
+    "businessFunctionType": "HAF",
+    "orderConfirmTimeStamp": "#OrdConfTS",
+    "orderStatusCode": "10",
+    "eventTimestamp": "#evntTS",
+    "returnToVendorStatusCode": "",
+    "orderSplitQuantity": 1,
+    "totalLineItemQuantity": 1,
+    "batchId": "#batchIdGroup-#batchId",
+    "orderCount":#batchOrderCount,
+    "orderFulfillmentStatus": "ENR"
+  },
+  "shipment": {
+    "orderShipmentNbr": #shipNbr,
+    "fulfillmentLegacyDivisionNbr": 71,
+    "fulfillmentLegacyLocationNbr": 912,
+    "fulfillmentLocationNbr": 7254,
+    "shipToLocationNbr": #shipToStr,
+    "expectedShipDate": "#expShpDt",
+    "holdDate": "#holdDt",
+    "packageSplitSequenceNbr": 1,
+    "itemsPerSplitQuantity": 1,
+    "customerDetail": {
+      "partyType": "R",
+      "attn": "Macys/HAF/WestBroadStore",
+      "companyName": "Macy's HAF",
+      "addressLine1": "550 Rickenbacker pkwy",
+      "addressLine2": "2nd avenue",
+      "cityName": "Columbus",
+      "stateName": "OH",
+      "zipCode": "43218",
+      "countryCode": "US",
+      "daytimePhoneNbr": "999-999-9999",
+      "deliveryType": "3",
+      "POBoxType": "",
+      "expectedShiptime": "",
+      "addressCode": "",
+      "emailAddress": "xxxx@macys.com",
+      "addressType": "MAILING"
+    }
+  },
+  "lineItemList": {
+    "lineItem": "#lineItem"
+  }
+}

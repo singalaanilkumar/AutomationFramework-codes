@@ -1,0 +1,11 @@
+{
+  "tname": "CONTCLOSED",
+  "payload": {
+    "sequenceNo": "#sequenceno",
+    "messageType": "CONTCLOSED",
+    "carton": "#container",
+    "store": "#storeNbr"
+  },
+  "locnNbr": 7221,
+  "clientId": "Pyramid"
+}

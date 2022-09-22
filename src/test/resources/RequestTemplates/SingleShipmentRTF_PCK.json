@@ -1,0 +1,47 @@
+{
+  "orderHeader": {
+    "orderID": #orderID,
+    "orderType": "Movement",
+    "orderSubType": "TRQ",
+    "eventType": "RTF",
+    "businessFunctionType": "PMR",
+    "orderConfirmTimeStamp": "#OrdConfTS",
+    "orderStatusCode": "10",
+    "eventTimestamp": "#evntTS",
+    "returnToVendorStatusCode": "",
+    "orderSplitQuantity": 1,
+    "totalLineItemQuantity": 1,
+	"orderCount": 0
+  },
+  "shipment": {
+    "orderShipmentNbr": #shipNbr,
+    "fulfillmentLegacyDivisionNbr": 77,
+    "fulfillmentLegacyLocationNbr": 912,
+    "fulfillmentLocationNbr": 7222,
+    "shipToLocationNbr": #shipToStr,
+    "isNewStore": false,
+    "expectedShipDate": "#expShpDt",
+    "holdDate": "#holdDt",
+    "packageSplitSequenceNbr": 1,
+    "itemsPerSplitQuantity": 1,
+    "customerDetail": {
+      "partyType": "R",
+      "attn": "Macys/HAF/WestBroadStore",
+      "companyName": "",
+      "addressLine1": "TestStore16",
+      "cityName": "Columbus",
+      "stateName": "OH",
+      "zipCode": "43218",
+      "countryCode": "US",
+      "daytimePhoneNbr": "",
+      "deliveryType": "3",
+      "expectedShiptime": "",
+      "addressCode": "",
+      "emailAddress": "",
+      "addressType": "MAILING"
+    }
+  },
+  "lineItemList": {
+    "lineItem": [#lineItem]
+  }
+}

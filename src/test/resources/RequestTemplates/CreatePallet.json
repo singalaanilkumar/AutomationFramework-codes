@@ -1,0 +1,5 @@
+{
+  "containerStatusCode": "#contStatus",
+  "containerType": "#contTyp",
+  "barCode": "#barCode"
+}

@@ -1,0 +1,12 @@
+{
+  "tname": "TOTECLOSE",
+  "payload": {
+    "sequenceNo": "#sequenceno",
+    "messageType": "TOTECLOSE",
+    "container": "#container",
+    "sku": "",
+    "quantity": "#SkuQty"
+  },
+  "locnNbr": 7221,
+  "clientId": "Pyramid"
+}

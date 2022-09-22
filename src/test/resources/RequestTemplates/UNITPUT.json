@@ -1,0 +1,25 @@
+{
+  "tname": "UNITPUT",
+  "payload": {
+    "sequenceNo": "#sequenceno",
+    "messageType": "UNITPUT",
+    "sourceContainer": "#sourceContainer",
+    "targetContainer": "#targetContainer",
+    "items": "#lineItem",
+    "store": "#StrNbr",
+    "dept": "#DeptNbr",
+    "quantity": "#SKUqty",
+    "prevPutQuantity": 0,
+    "casePack": "#CasePack",
+    "orderSource": "#orderSource",
+    "orderNumber": "#PONbr",
+    "receiptNumber": "#RcptNbr",
+    "slotId": "0102-AA-001",
+    "shortQuantity": "",
+    "futureValue1": "",
+    "futureValue2": ""
+  },
+  "locnNbr": 7221,
+  "clientId": "Pyramid"
+}
+

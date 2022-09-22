@@ -1,0 +1,18 @@
+{
+  "tname": "CONTRECEIVE",
+  "payload": {
+    "sequenceNo": "#sequenceno",
+    "messageType": "CONTRECEIVE",
+    "lpn": "#lpnNumber",
+    "shipmentId": "#shipmentId",
+    "bol": "",
+    "orderSource": "W",
+    "orderNumber": "#orderNumber",
+    "receiptNumber": "#receiptNumber",
+    "divertLaneId": "#divertLaneId",
+    "futureValue1": "",
+    "futureValue2": ""
+  },
+  "clientId": "Pyramid",
+  "locnNbr": 7221
+}

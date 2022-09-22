@@ -1,0 +1,28 @@
+{
+  "type": "CRT",
+  "barcode": "#barcode",
+  "status": "#status",
+  "processArea": "#processArea",
+  "newStoreIndicator": "0",
+  "hazmatIndicator": "0",
+  "shipVia": "#shipVia",
+  "transitDays": 1,
+  "enabled": 1,
+  "destLocnNbr": 5514,
+  "packageDetails": [
+    {
+      "skuupc": "492608003420",
+      "qty": 10,
+      "orderSource": "P",
+      "orderNumber": "4727227",
+      "orderDetail": "260853051874"
+    },
+    {
+      "skuupc": "492608003422",
+      "qty": 20,
+      "orderSource": "P",
+      "orderNumber": "4727228",
+      "orderDetail": "260853051878"
+    }
+  ]
+}

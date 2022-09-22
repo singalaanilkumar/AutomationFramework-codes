@@ -1,0 +1,17 @@
+  {
+    "type": "SPLIT",
+    "qty": #qty,
+    "status": "OPEN",
+    "attributes": {
+      "sequence": "1",
+      "poNbr": "#PONBR",
+      "subType": "R",
+      "poRcptNbr": "#ReceiptNbr",
+      "newStoreInd": "0"
+    },
+    "containerId": "#ToteNbr",
+    "containerType": "TOTE",
+    "locnNbr": 7221,
+    "upc": "#SKUNbr",
+    "totalQty": #qty
+  }

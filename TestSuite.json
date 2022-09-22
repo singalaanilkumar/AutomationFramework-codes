@@ -1,0 +1,280 @@
+[
+  {
+    "module": "test",
+    "stories": [
+        "InboundPalletization"
+    ]
+  },
+  {
+    "module": "SanityE2E",
+    "stories": [
+      "PutToStoreFlow_SingleUPC",
+      "PutToStoreFlow_MultipleUPC",
+      "PartialReleaseFromUI",
+      "PackawayPull_RunUndoWaveUI",
+      "PutToStoreAndPackaway"
+    ]
+  },
+  {
+    "module": "SupportUI",
+    "stories": [
+      "ContainerSupport",
+      "MessagingSupport"
+    ]
+  },
+  {
+    "module": "Regression",
+    "stories": [
+      "PutToStoreFlow_SingleUPC",
+      "PutToStoreFlow_MultipleUPC",
+      "PartialReleaseFromUI",
+      "PutToStoreAndPackaway",
+      "InnerPack",
+      "BulkSort2Store",
+      "MultiProcessAreaRelease",
+      "Overage",
+      "Shortage",
+      "PutToStoreFlow_UnitPutOverage",
+      "PutToStoreAndPackaway_MultipleBinsForGivenUPC",
+      "SupplyChainUIScenario",
+      "Re-ReleaseFlow",
+      "MultiReceipt",
+      "HoldAndFlow_1ASN6Cases2Waves"
+    ]
+  },
+  {
+    "module": "RegularE2E",
+    "stories": [
+      "PutToStoreFlow_MultipleUPC",
+      "PartialReleaseFromUI",
+      "PutToStoreAndPackaway",
+      "InnerPack",
+      "BulkSort2Store",
+      "Overage",
+      "PutToStoreFlow_UnitPutOverage",
+      "Re-ReleaseFlow",
+      "PackawayPull_MultiWaveUAT",
+      "CycleCount",
+      "PackawayPull_RunUndoWaveUI",
+      "PutToStoreFlow_SingleUPC",
+      "PackawayPull_Sort2Store",
+      "InboundPalletization"
+    ]
+  },
+  {
+    "module": "RegularE2EwithoutSingle",
+    "stories": [
+      "PutToStoreFlow_MultipleUPC",
+      "PartialReleaseFromUI",
+      "PutToStoreAndPackaway",
+      "InnerPack",
+      "BulkSort2Store",
+      "Overage",
+      "PutToStoreFlow_UnitPutOverage",
+      "Re-ReleaseFlow",
+      "HoldAndFlow_1ASN6Cases2Waves",
+      "PackawayPull_MultiWaveUAT",
+      "CycleCount",
+      "PackawayPull_RunUndoWaveUI"
+    ]
+  },
+  {
+    "module": "PutToStoreFlow_SingleUPC",
+    "stories": [
+      "PutToStoreFlow_SingleUPC"
+    ]
+  },
+  {
+    "module": "HoldAndFlow_1ASN6Cases2Waves",
+    "stories": [
+      "HoldAndFlow_1ASN6Cases2Waves"
+    ]
+  },
+  {
+    "module": "PutToStoreFlow_MultipleUPC",
+    "stories": [
+      "PutToStoreFlow_MultipleUPC"
+    ]
+  },
+  {
+    "module": "PartialReleaseFromUI",
+    "stories": [
+      "PartialReleaseFromUI"
+    ]
+  },
+  {
+    "module": "PutToStoreAndPackaway",
+    "stories": [
+      "PutToStoreAndPackaway"
+    ]
+  },
+  {
+    "module": "InnerPack",
+    "stories": [
+      "InnerPack"
+    ]
+  },
+  {
+    "module": "BulkSort2Store",
+    "stories": [
+      "BulkSort2Store"
+    ]
+  },
+  {
+    "module": "Overage",
+    "stories": [
+      "Overage"
+    ]
+  },
+  {
+    "module": "PutToStoreFlow_UnitPutOverage",
+    "stories": [
+      "PutToStoreFlow_UnitPutOverage"
+    ]
+  },
+  {
+    "module": "Re-ReleaseFlow",
+    "stories": [
+      "Re-ReleaseFlow"
+    ]
+  },
+  {
+    "module": "PackawayPull_MultiWaveUAT",
+    "stories": [
+      "PackawayPull_MultiWaveUAT"
+    ]
+  },
+  {
+    "module": "PackawayPull_RunUndoWaveUI",
+    "stories": [
+      "PackawayPull_RunUndoWaveUI"
+    ]
+  },
+  {
+    "module": "PackawayPull_Sort2Store",
+    "stories": [
+      "PackawayPull_Sort2Store"
+    ]
+  },
+  {
+    "module": "PackawayPull",
+    "stories": [
+      "PackawayPull_RunUndoWaveUI",
+      "PackawayPull_MultiWaveUAT",
+      "PackawayPull_Sort2Store"
+    ]
+  },
+  {
+    "module": "PostDeployValidations",
+    "stories": [
+      "PostDeployValidationsHH",
+      "PostDeployValidationsAPI"
+    ]
+  },
+  {
+    "module": "CycleCount",
+    "stories": [
+      "CycleCount"
+    ]
+  },
+  {
+    "module": "LocateAndContainerInquiry",
+    "stories": [
+      "SingleSKUE2E_WithAllHandheldOptions"
+    ]
+  },
+  {
+    "module": "SupplyChainUIE2Evalidation",
+    "stories": [
+      "SupplyChainUIE2Evalidation"
+    ]
+  },
+  {
+    "module": "WavingUIE2EValidation",
+    "stories": [
+      "WavingUIE2EValidation"
+    ]
+  },
+  {
+    "module": "FunctionalUITest",
+    "stories": [
+      "POInquiryHyperlink_QuickPrintValidation"
+    ]
+  },
+  {
+    "module": "DefaultDashboardValidation",
+    "stories": [
+      "PODashboardRegression",
+      "WaveDashboardRegression"
+    ]
+  },
+  {
+    "module": "InboundPalletization",
+    "stories": [
+      "InboundPalletization"
+    ]
+  },
+  {
+    "module": "ExceptionalLane",
+    "stories": [
+      "ExceptionalLane"
+    ]
+  },
+  {
+    "module": "UI_E2E",
+    "stories": [
+      "SupplyChainUIE2Evalidation",
+      "WavingUIE2EValidation"
+    ]
+  },
+  {
+    "module": "Handheld",
+    "stories": [
+      "MovePallet",
+      "SplitMove",
+      "consumeContainer",
+      "ExceptionalLane"
+    ]
+  },
+  {
+    "module": "SCM",
+    "stories": [
+      "InventoryInquiry",
+      "InventoryInquiryAdjustment",
+      "consumeContainer",
+      "LocationView",
+      "Manifest"
+    ]
+  },
+  {
+    "module": "Smoke",
+    "stories": [
+      "SmokeTestAllServices"
+    ]
+  },
+  {
+    "module": "VerifyServicesVersion",
+    "stories": [
+      "ValidateServiceVersions"
+    ]
+  },
+  {
+    "module": "NewPOTillClose",
+    "stories": [
+      "OSCNewPO_E2ETillCloseReceipt"
+    ]
+  },
+  {
+    "module": "OB2Merge",
+    "stories": [
+      "DockScan"
+    ]
+  },
+  {
+    "module": "OB2Merge_E2E",
+    "stories": [
+      "OBTM_E2E"
+    ]
+  }
+
+]

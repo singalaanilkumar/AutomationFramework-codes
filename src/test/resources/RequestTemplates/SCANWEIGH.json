@@ -1,0 +1,11 @@
+{
+  "tname": "SCANWEIGH",
+  "payload": {
+    "sequenceNo": "#sequenceno",
+    "messageType": "SCANWEIGH",
+    "carton": "#carton",
+    "weight": "#weight"
+  },
+  "locnNbr": 7221,
+  "clientId": "Pyramid"
+}

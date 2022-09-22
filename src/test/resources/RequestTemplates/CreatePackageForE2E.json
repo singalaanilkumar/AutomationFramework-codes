@@ -1,0 +1,27 @@
+{
+  "type": "CRT",
+  "barcode": "#barcode",
+  "status": "#status",
+  "processArea": "#processArea",
+  "newStoreIndicator": "0",
+  "hazmatIndicator": "0",
+  "transitDays": 3,
+  "enabled": 1,
+  "destLocnNbr": "#destLocNbr",
+  "packageDetails": [
+    {
+      "skuupc": "#upc",
+      "qty": "#qty",
+      "orderSource": "P",
+      "orderNumber": "#orderNo",
+      "orderDetail": "#oDetail"
+    },
+    {
+      "skuupc": "#upc1",
+      "qty": "#qty2",
+      "orderSource": "P",
+      "orderNumber": "#orderNo1",
+      "orderDetail": "#oDetail1"
+    }
+  ]
+}

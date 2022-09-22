@@ -1,0 +1,10 @@
+{
+  "container": {
+    "containerRelationshipList": [
+      {
+        "parentContainer": "#parentBarcode",
+        "parentContainerType": "#parentConTyp"
+      }
+    ]
+  }
+}

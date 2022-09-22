@@ -1,0 +1,6 @@
+{
+    "rcptStatNbr": 15,
+    "rcptMthdCode": "M",
+    "whmStatus": "ACK",
+    "rcptNbr": #rcptNbr
+}

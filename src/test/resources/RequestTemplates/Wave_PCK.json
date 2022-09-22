@@ -1,0 +1,17 @@
+{
+  "shipOutStartDate": "#startShpDt",
+  "shipOutEndDate": "#endShpDt",
+  "deptNbrs": [#dept],
+  "effectiveStartDate": "#efctStartDt",
+  "effectiveEndDate": "#efctEndDt",
+  "waveType": "#waveType",
+  "division":"77",
+  "flowType": "PMR",
+  "fulfilmentLocnNbr":"7222",
+  "maxThreshold":"5",
+  "minThreshold":"5",
+  "noOfUnits":"#noOfUnits",
+  "storeType":"#storeType",
+  "noOfOrdersLimit": "#noOfOrdersLimit",
+  "softAlloc": false
+}

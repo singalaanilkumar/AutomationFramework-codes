@@ -1,0 +1,29 @@
+{
+  "container": {
+    "barCode": "#barCode",
+    "containerType": "CSE",
+    "lgclLocnNbr": 7254,
+    "containerStatusCode": "NRCVD",
+    "attributeList": [
+      {
+        "key": "PO",
+        "values": [
+          "#PO"
+        ]
+      },
+      {
+        "key": "POReceipt",
+        "values": [
+          "#Rcpt"
+        ]
+      },
+      {
+        "key": "ASN",
+        "values": [
+          "#ASN"
+        ]
+      }
+    ]
+  },
+  "inventorySnapshotList": #invSnapshot
+}

@@ -1,0 +1,11 @@
+{
+  "tname": "SHIPCONFIRM",
+  "payload": {
+    "sequenceNo": "#sequenceno",
+    "messageType": "SHIPCONFIRM",
+    "carton": "#carton",
+    "carrierLane": "#carrierLane"
+  },
+  "locnNbr": 7221,
+  "clientId": "Pyramid"
+}

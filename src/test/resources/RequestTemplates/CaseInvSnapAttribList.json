@@ -1,0 +1,17 @@
+{
+  "item": "#SKU",
+  "lgclLocnNbr": 7254,
+  "quantity": #qty,
+  "statusCode": "AVL",
+  "conditionCodeList": [
+    "PP"
+  ],
+  "attributeList": [
+    {
+      "key": "ASN",
+      "values": [
+        "#ASN"
+      ]
+    }
+  ]
+}

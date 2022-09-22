@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+
+    <config type="testConfig" name="test">
+
+        <stories>
+            <story>PutToStoreAndPackaway</story>
+            <!--<story>CleanUp</story>-->
+            <!--<story>UnitPut</story>-->
+            <!--<story>PrepOption</story>-->
+            <!--<story>Sample</story>-->
+        </stories>
+
+        <datasetupflag>
+            <suitelevel>N</suitelevel>
+            <storylevel>N</storylevel>
+            <storyscenariolevel>N</storyscenariolevel>
+            <storyscenarioiterationlevel>N</storyscenarioiterationlevel>
+        </datasetupflag>
+
+        <datasetupstoryscenario>
+            <ss storyname="ART-9" scenarioname="ART9-SC01" />
+        </datasetupstoryscenario>
+
+        <datasetupscenarioiteration>
+            <ssi storyname="ART-9" scenarioname="ART9-SC01" itrnum="2" />
+        </datasetupscenarioiteration>
+
+
+
+        <metafiltetrs>
+            <metafiltetrFLag>N</metafiltetrFLag>
+            <metafiltetr>+regression , -acceptance </metafiltetr>
+            <!-- <metafiltetr>+@id ART9-SC03 </metafiltetr> -->
+        </metafiltetrs>
+
+        <testdatainputtables>
+            <tablename>AUTO_DATA_INPUT</tablename>
+        </testdatainputtables>
+        <testdataoutputtables>
+            <tablename>AUTO_DATA_OUTPUT</tablename>
+        </testdataoutputtables>
+
+        <testData>
+            <orderPrefix />
+            <facilityAliasId>44</facilityAliasId>
+            <prodStatInInv>71</prodStatInInv>
+        </testData>
+
+    </config>
+
+</document>

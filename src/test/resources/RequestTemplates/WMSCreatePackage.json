@@ -1,0 +1,8 @@
+{
+  "data": "{\"barcode\":\"#barcode\",\"type\":\"CRT\",\"status\":\"SHR\",\"shipmentNumber\":\"RTF318924\",\"processArea\":\"HAF\",\"newStoreIndicator\":1,\"destLocnNbr\":6229,\"hazmatIndicator\":0,\"shipVia\":\"#shipVia\",\"trackingNumber\":\"1zfhjkh8375923420498\",\"location\":\"#location\",\"weight\":3.12,\"length\":1.1,\"width\":1.2,\"height\":3.2,\"discount\":12,\"baseAmount\":32,\"fuelSurcharge\":1.18,\"totalAmount\":20,\"special\":1.12,\"transitDays\":3,\"divertshipTs\":\"#divertshipTs\",\"divertshipSeq\":#divertshipSeq}",
+  "attributes": {
+    "locnNbr": #locnNbr,
+    "clientId": "Atlas",
+    "tName": "DivertShip"
+  }
+}

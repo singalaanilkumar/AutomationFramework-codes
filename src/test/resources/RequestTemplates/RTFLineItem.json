@@ -1,0 +1,8 @@
+{
+  "orderShipmentNbr": #shipNbr,
+  "orderLineItemNbr": #lnNbr,
+  "itemSkuUpc": #SKU,
+  "itemQuantity": #qty,
+  "pickVariableQuantityFlg": "",
+  "source": ["#caseBarcode"]
+}

@@ -1,0 +1,7 @@
+{
+  "orderShipmentNbr": #shipNbr,
+  "orderLineItemNbr": #lnNbr,
+  "itemSkuUpc": #SKU,
+  "itemQuantity": #QTY,
+  "pickVariableQuantityFlg": "0"
+}

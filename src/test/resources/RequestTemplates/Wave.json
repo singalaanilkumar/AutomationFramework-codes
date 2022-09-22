@@ -1,0 +1,11 @@
+{
+  "shipOutStartDate": "#startShpDt",
+  "shipOutEndDate": "#endShpDt",
+  "deptNbrs": [#dept],
+  "effectiveStartDate": "#efctStartDt",
+  "effectiveEndDate": "#efctEndDt",
+  "waveType": "HAF",
+  "division":"71",
+  "flowType": "HAF",
+  "softAlloc": false
+}

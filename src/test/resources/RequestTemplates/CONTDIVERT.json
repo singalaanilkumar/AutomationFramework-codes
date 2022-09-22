@@ -1,0 +1,13 @@
+{
+  "tname": "CONTDIVERT",
+  "payload": {
+    "sequenceNo": "#sequenceno",
+    "messageType": "CONTDIVERT",
+    "lpn": "#lpnNumber",
+    "futureValue1": "",
+    "futureValue2": "",
+    "divertLaneId": "#divertedLane"
+  },
+  "locnNbr": 7221,
+  "clientId": "Pyramid"
+}

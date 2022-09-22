@@ -1,0 +1,58 @@
+{
+  "container": {
+    "containerType": "#contTyp",
+    "containerStatusCode": "#contStat",
+    "attributeList": [
+      {
+        "key": "PO",
+        "values": [
+          "#PO"
+        ]
+      },
+      {
+        "key": "ProcessArea",
+        "values": [
+          "#ProcessArea"
+        ]
+      },
+      {
+        "key": "POReceipt",
+        "values": [
+          "#Receipt"
+        ]
+      }
+    ],
+    "barCode": "#barcode",
+    "containerRelationshipList": [
+      {
+        "parentContainer": "#parentBarcode",
+        "parentContainerType": "#parentConTyp",
+        "depth": 1
+      }
+    ]
+  },
+  "inventorySnapshotList": [
+    {
+      "item": "#item",
+      "quantity":#qty,
+      "statusCode": "#itmStat",
+      "conditionCodeList": [
+    	"LW"
+		],
+      "attributeList": [
+        {
+          "key": "POLineBarcode",
+          "values": [
+            "#lineBarcod"
+          ]
+        },
+        {
+          "key": "Department",
+          "values": [
+            "#dept"
+          ]
+        }
+      ]
+    }
+  ]
+}
