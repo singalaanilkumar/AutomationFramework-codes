@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" data-provider-thread-count="2" parallel="tests">
+    <listeners>
+        <listener class-name="Reports.ExtentReportNg"></listener>
+    </listeners>
+    <test name="ChromeBrowser">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="TestCases.ExcelDataProviderWithChrome">
+            </class>
+        </classes>
+    </test>
+
+    <test name="EdgeBrowser">
+        <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="TestCases.ExcelDataProviderWithEdge">
+            </class>
+        </classes>
+    </test>
+</suite>

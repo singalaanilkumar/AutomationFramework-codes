@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SanpdealProject">
+    <listeners>
+        <listener class-name="Reports.ExtentReportNg"></listener>
+    </listeners>
+    <test  name="SanpdealTestCase">
+        <classes>
+            <class name="TestCases.TestCase">
+            </class>
+        </classes>
+    </test>
+</suite>
