@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- <suite name="suite"> -->
+
+<suite name="Suite" parallel="tests"  allow-return-values="true" thread-count="1">
+
+	<listeners>
+		<listener class-name="com.macys.mst.artemis.testNg.TestNGListener"/>
+	</listeners>
+
+	<test name="test">
+		<parameter name="Flagtestexecution" value="Yes"></parameter>
+		<parameter name="Exeenv" value="DEV"></parameter>
+		<parameter name="TestConfigName" value="test"></parameter>
+		<parameter name="Runtests-f" value="Yes"></parameter>
+		<parameter name="browserName" value="Chrome"></parameter>
+		<parameter name="FlagdatasromJira" value="No"></parameter>
+		<parameter name="test_results_tab_injira" value="QA_test_ie" ></parameter>
+		<parameter name="Flag-testUIetup" value="No"></parameter>
+		<parameter name="GenerateStepDefs" value="No"></parameter>
+		<parameter name="Rerun_failed_tests" value="No"></parameter>
+		<parameter name="CreateOnly-ScenariosAsStories" value="No" />
+		<parameter name="RunOnly-ScenariosAsStories" value="No" />
+		<parameter name="CreateRun-ScenariosAsStories" value="No" />
+		<classes>
+			<class name="com.macys.mst.WMSLite.EndToEnd.execdrivers.ExecutionConfig"/>
+		</classes>
+	</test>
+</suite>

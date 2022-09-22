@@ -1,0 +1,33 @@
+[
+  {
+    "module": "test",
+    "stories": [
+        "OrderInquiry"
+    ]
+  },
+  {
+    "module": "Regression",
+    "stories": [
+
+    ]
+  },
+  {
+    "module": "RegularE2E",
+    "stories": [
+
+    ]
+  },
+  {
+    "module": "FunctionalUITest",
+    "stories": [
+
+    ]
+  },
+  {
+    "module": "Smoke",
+    "stories": [
+
+    ]
+  }
+
+]

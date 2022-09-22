@@ -1,0 +1,126 @@
+<document>
+    <config type="env" name="QA">
+    </config>
+    <config type="env" name="DEV">
+        <warehouseLocNbr>7221</warehouseLocNbr>
+        <GCPProjId>mtech-wms-dc2-nonprod</GCPProjId>
+        <AppUrls>
+            <wmsLiteUrl>http://ln000xhwms0071:4200/#/login</wmsLiteUrl>
+            <userName></userName>
+            <password></password>
+            <jwtPassword>cloud-app-superuser-login-jwt</jwtPassword>
+        </AppUrls>
+
+        <cyberark>
+            <safe>PSV-FS-WMOPS-P</safe>
+            <appid>WMS_OPS</appid>
+            <pwdobjectid>Misc-Macys-Application-Passive-scmqauser</pwdobjectid>
+        </cyberark>
+
+        <oracleOSMDB>
+            <driver>
+                <classname>oracle.jdbc.driver.OracleDriver</classname>
+            </driver>
+            <testData>
+                <connecturl>jdbc:Oracle:thin:@//ln000xsodb0002:1521/WMSDEV03</connecturl>
+                <name>OSMLTDEVM</name>
+                <pwdobjectid>WmsLite-Dev-OSM</pwdobjectid>
+                <safe>PSV-FS-WMOPS-P</safe>
+                <appid>WMS_OPS</appid>
+            </testData>
+        </oracleOSMDB>
+
+        <oracleJoppaDB>
+            <driver>
+                <classname>oracle.jdbc.driver.OracleDriver</classname>
+            </driver>
+            <testData>
+                <connecturl>jdbc:Oracle:thin:@//ln000xsodb0002:1521/WMSDEV03</connecturl>
+                <name>JOPPADEV</name>
+                <pwdobjectid>WmsLite-Dev-JoppA19User</pwdobjectid>
+                <safe>PSV-FS-WMOPS-P</safe>
+                <appid>WMS_OPS</appid>
+            </testData>
+        </oracleJoppaDB>
+
+        <oracleMSTLTDB>
+            <driver>
+                <classname>oracle.jdbc.driver.OracleDriver</classname>
+            </driver>
+            <testData>
+                <connecturl>jdbc:Oracle:thin:@//ln000xsodb0002:1521/WMSDEV03</connecturl>
+                <name>JOPPADEV</name>
+                <pwdobjectid>WmsLite-Dev-MST</pwdobjectid>
+                <safe>PSV-FS-WMOPS-P</safe>
+                <appid>WMS_OPS</appid>
+            </testData>
+        </oracleMSTLTDB>
+
+        <db>
+            <driver>
+                <classname>com.mysql.jdbc.Driver</classname>
+            </driver>
+            <userName>scmqauser</userName>
+            <connecturi>jdbc:mysql://172.21.98.165:3306/%s?serverTimezone=UTC&amp;useSSL=false&amp;relaxAutoCommit=true&amp;allowMultiQueries=true
+                <!--            <connecturi>jdbc:mysql://127.0.0.1:2225/%s?serverTimezone=UTC&amp;useSSL=false&amp;relaxAutoCommit=true&amp;allowMultiQueries=true-->
+            </connecturi>
+            <!-- <connecturi>jdbc:mysql://dc20-qa-cloudsql.devops.fds.com:3306/%s?serverTimezone=UTC&amp;useSSL=false&amp;relaxAutoCommit=true</connecturi> -->
+        </db>
+
+        <onPremDB>
+            <driver>
+                <classname>oracle.jdbc.driver.OracleDriver</classname>
+            </driver>
+            <LFCBIZ01>
+                <connecturi>jdbc:Oracle:thin:@//LFCBIZ01DB.federated.fds:1521/LFCBIZ01</connecturi>
+                <name>FARCVM1</name>
+                <pwdobjectid>Database-Macys-Passive-OracleDatabase-LFCBIZ01DB-FARCVM1</pwdobjectid>
+                <safe>PSV-FS-WMS-AutoTest-Q</safe>
+                <appid>WMS_Q</appid>
+            </LFCBIZ01>
+
+        </onPremDB>
+
+
+        <WMSUI>
+            <baseURL></baseURL>
+        </WMSUI>
+
+        <soap>
+        </soap>
+
+
+        <services>
+        </services>
+
+        <pubSub>
+            <topics>
+                <publishRTF>mms-transaction-publishrtf-qa</publishRTF>
+                <LogD>whm-appt-shipment-inventory-qa</LogD>
+                <packageLogD>whm-shipment-cntr-mvmt-qa</packageLogD>
+                <publishASNRcvNotification>whm-order-asn-haf-receive-notification-qa</publishASNRcvNotification>
+                <closeCartonMessageForMMS>whm-orderfulfillment-mms-shipcntr-uat</closeCartonMessageForMMS>
+                <wmsCarton>wms_carton_events_qa</wmsCarton>
+                <createAppointment>whm-appt-integration-qa</createAppointment>
+            </topics>
+        </pubSub>
+
+        <ems>
+            <enroute>
+                <server>tcp://tibenp09.federated.fds:7212</server>
+                <topic>M.LGS.ENRTEMS.TRANSPORT.TME.CarrierStatus.Send</topic>
+                <user>whmuser</user>
+            </enroute>
+            <monarch>
+                <server>tcp://tibenp09.federated.fds:7212</server>
+                <topic>M.AIN.MONEMS.TRANSACTION.TME.MERCHANDISE</topic>
+                <user>whmuser</user>
+            </monarch>
+        </ems>
+        <!-- END of Database Details -->
+    </config>
+    <config type="env" name="UAT">
+    </config>
+    <config type="env" name="PERF">
+    </config>
+</document>
