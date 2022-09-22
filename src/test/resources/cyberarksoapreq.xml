@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="https://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:GetPassword>
+         <tem:passwordWSRequest>
+            <tem:AppID>WMS_I</tem:AppID>
+            <tem:Safe>PSV-FS-WMOPS-P</tem:Safe>
+            <tem:Object>cloud-scmuatuser</tem:Object>
+         </tem:passwordWSRequest>
+      </tem:GetPassword>
+   </soap:Body>
+</soap:Envelope>

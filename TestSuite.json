@@ -1,0 +1,15 @@
+[
+  {
+    "module": "test",
+    "stories": [
+        "AtlasDemo"
+    ]
+  },
+  {
+    "module": "RegressionSuite",
+    "stories": [
+      "WRSA-1"
+    ]
+  }
+
+]

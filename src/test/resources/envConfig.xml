@@ -1,0 +1,427 @@
+<document>
+    <config type="env" name="DEV">
+                <!-- END of Database Details -->
+    </config>
+    <config type="env" name="UAT">
+        <AppUrls>
+            <handheldUrl>http://ln000xhtlw0008:8280/HandHeld/mobile/idx</handheldUrl>
+            <apolloUrl>http://ln000xhapw0004:9080/MSTWMWeb/login/auth</apolloUrl>
+            <userName>BH16854</userName>
+            <password>Jul@2021</password>
+            <jwtPassword>cloud-app-superuser-login-jwt</jwtPassword>
+        </AppUrls>
+
+        <cyberark>
+            <safe>PSV-FS-WMOPS-P</safe>
+            <appid>WMS_I</appid>
+            <pwdobjectid>cloud-scmuatuser</pwdobjectid>
+        </cyberark>
+
+        <!-- Database Details -->
+        <mySQLDB>
+            <driver>
+                <classname>com.mysql.cj.jdbc.Driver</classname>
+            </driver>
+            <mySQLTestData>
+                <name>routing_user</name>
+                <connecturl>jdbc:mysql://ln000xhdbm0006:3306/routing?serverTimezone=UTC&amp;useSSL=false&amp;relaxAutoCommit=true&amp;allowMultiQueries=true
+                </connecturl>
+                <password>1cr*QJX?</password>
+            </mySQLTestData>
+        </mySQLDB>
+
+        <oracleDB>
+            <driver>
+                <classname>oracle.jdbc.driver.OracleDriver</classname>
+            </driver>
+            <testData>
+                <connecturl>jdbc:Oracle:thin:@//WMSDEV02DB.federated.fds:1521/WMBDEV2F</connecturl>
+                <name>MSTTST03</name>
+                <password>Welcome1</password>
+                <pwdobjectid>Database-Macys-Passive-OracleDatabase-LFCBIZ01DB-FARCVM1</pwdobjectid>
+                <safe>PSV-FS-WMS-AutoTest-Q</safe>
+                <appid>WMS_Q</appid>
+            </testData>
+        </oracleDB>
+        <!-- END of Database Details -->
+
+        <services>
+            <manifesturl>
+                http://ln000xhalw0001:9081/atlas-dc2-manifesting-service/Atlas/ManifestingService/DIVERTSHIP/51/#packageNo
+            </manifesturl>
+        </services>
+    </config>
+    <config type="env" name="QA">
+        <AppUrls>
+            <handheldUrl>http://ln000xhtlw0004:8280/HandHeld/mobile/idx</handheldUrl>
+            <apolloUrl>http://ln000xhapw0001:8080/MSTWMWeb/login/auth</apolloUrl>
+            <userName>BH16854</userName>
+            <password>Jul@2021</password>
+            <jwtPassword>cloud-app-superuser-login-jwt</jwtPassword>
+        </AppUrls>
+
+        <cyberark>
+            <safe>PSV-FS-WMOPS-P</safe>
+            <appid>WMS_I</appid>
+            <pwdobjectid>cloud-scmuatuser</pwdobjectid>
+        </cyberark>
+
+        <!-- Database Details -->
+        <mySQLDB>
+            <driver>
+                <classname>com.mysql.cj.jdbc.Driver</classname>
+            </driver>
+            <mySQLTestData>
+            <name>routing_user</name>
+            <connecturl>jdbc:mysql://ln000xhdbm0005:3306/routing?serverTimezone=UTC&amp;useSSL=false&amp;relaxAutoCommit=true&amp;allowMultiQueries=true
+            </connecturl>
+                <password>1cr*QJX?</password>
+            </mySQLTestData>
+        </mySQLDB>
+
+        <oracleDB>
+            <driver>
+                <classname>oracle.jdbc.driver.OracleDriver</classname>
+            </driver>
+            <testData>
+                <connecturl>jdbc:Oracle:thin:@//WMSDEV02DB.federated.fds:1521/WDCDEV2F</connecturl>
+                <name>MSTPDPRD</name>
+                <password>MSTPD9R1</password>
+                <pwdobjectid>Database-Macys-Passive-OracleDatabase-LFCBIZ01DB-FARCVM1</pwdobjectid>
+                <safe>PSV-FS-WMS-AutoTest-Q</safe>
+                <appid>WMS_Q</appid>
+            </testData>
+        </oracleDB>
+        <!-- END of Database Details -->
+
+        <services>
+            <manifesturl>
+                http://ln000xhalw0001:9081/atlas-dc2-manifesting-service/Atlas/ManifestingService/DIVERTSHIP/51/#packageNo
+            </manifesturl>
+        </services>
+    </config>
+    <config type="env" name="PERF">
+    </config>
+    <config type="env" name="APP10">
+        <!-- Requires for Waveless - Please Update According to Enviornment -->
+        <cyberark>
+            <safe>PSV-FS-WMS-AutoTest-Q</safe>
+            <appid>WMS_Q</appid>
+        </cyberark>
+        <activespace>
+            <server>
+                <url>tcp://tibanp168.federated.fds:57051</url>
+                <!-- <url>tcp://tibanp168.federated.fds:57051;tibanp169.federated.fds:57051?remote=true</url> -->
+            </server>
+            <metaspace>
+                <name>D2CWM2_QAT03</name>
+            </metaspace>
+            <member>
+                <name>Automation</name>
+            </member>
+            <session>30000</session>
+        </activespace>
+        <envtorunagainst>atlas</envtorunagainst>
+        <ems>
+            <rwf>
+                <server>
+                    <Proteus-url>ssl://tibenp09.federated.fds:7315</Proteus-url>
+                    <username>admd2cwms</username>
+                    <pwdobjectid>Misc-Macys-Application-Passive-admd2cwms</pwdobjectid>
+                    <queueName>M.D2C.WMMB.ORDER.OSM.EVENT.RECEIVE</queueName>
+                    <!-- <queueName>M.D2C.WMGY.ORDER.OSMBOSS.EVENT.RECEIVE</queueName> -->
+                </server>
+            </rwf>
+            <rtf>
+                <server>
+                    <url>ssl://tibenp09.federated.fds:7315</url>
+                    <!--             <url>tcp://tibenp09.federated.fds:7215</url>-->
+                    <username>admd2cwms</username>
+                    <pwdobjectid>Misc-Macys-Application-Passive-talostibco</pwdobjectid>
+                    <queueName>M.D2C.WMGY.ORDER.OSM.EVENT.RECEIVE</queueName>
+                    <!--             <queueName>M.AIN.EOSEMS.ORDER.ORDEREVENTS.V1</queueName>-->
+                    <!--<queueName>M.D2C.WMGY.ORDER.OSMBOSS.EVENT.RECEIVE</queueName> -->
+                </server>
+            </rtf>
+            <!-- <server> <url>ssl://tibenp37.federated.fds:7372,ssl://tibenp36.federated.fds:7372</url>
+                      <username>iwmuser</username> <pwdobjectid>Misc-Macys-Application-Passive-tibcofixiwmuser</pwdobjectid>
+                      </server> -->
+            <!-- added topic for updating GC -->
+            <server>
+                <url>ssl://tibenp09.federated.fds:7315</url>
+                <username>admd2cwms</username>
+                <password>admd2cwms</password>
+                password&gt;
+                <pwdobjectid>Misc-Macys-Application-Passive-admd2cwms</pwdobjectid>
+            </server>
+            <batchEmsAdapter>
+                <server>
+                    <url>tcp://tibenp09.federated.fds:7215</url>
+                    <name>admd2cwms</name>
+                    <pwdobjectid>Misc-Macys-Application-Passive-aresbatchemsadapter</pwdobjectid>
+                    <queuename>M.D2C.WMSINT.INTERNAL.ARES.BATCH.RECEIVE</queuename>
+                    <topicname>M.D2C.WMSINT.MONITOR.ARES.EVENT.PUBLISH</topicname>
+                </server>
+            </batchEmsAdapter>
+        </ems>
+        <!-- End of Waveless -->
+        <was>
+            <env>
+                <whseNo>02</whseNo>
+                <AutoWaveReceiveQueue>M.D2C.WMS.WA.AUTOWAVE.REC.REQUEST</AutoWaveReceiveQueue>
+                <wmsSchema>wmsapp10mb</wmsSchema>
+                <mstSchema>wms</mstSchema>
+                <osmSchema>OSM</osmSchema>
+                <proteusSchema>PMST</proteusSchema>
+                <app10Schema>wms</app10Schema>
+                <atlasSchema>atlas</atlasSchema>
+                <atlasServicesServer>mcjca048230</atlasServicesServer>
+                <osmBOSSSchema>osmschema</osmBOSSSchema>
+                <genericConfig>http://mcjca048156:2000</genericConfig>
+                <beumerResponseQueue>M.D2C.WMSTST01.WA.BEUMER.RESPONSE</beumerResponseQueue>
+                <apolloAtlas>http://mcjca048230:8180</apolloAtlas>
+                <apolloTalos>http://mcjca048205:8380</apolloTalos>
+                <handHeld>http://mcjca048205:8280/HandHeld</handHeld>
+                <!-- Requires for Waveless - Please Update According to Enviornment -->
+                <apolloUrl>http://mcjca048235:9080</apolloUrl>
+                <apolloUrlOfProteus>http://mcjca048235:9080</apolloUrlOfProteus>
+                <apolloGenricConfigURL>http://mcjca048156:8080</apolloGenricConfigURL>
+                <usernameApollo>#UserName</usernameApollo>
+                <passwordApollo>xxx</passwordApollo>
+                <!-- End of Waveless -->
+                <hostname>http://ln000xswms0052:8080</hostname>
+                <pheme>http://mcjca048205:9080/phmsimulator/simulator/index</pheme>
+                <closePackWaveAPI>http://mcjca048205:8180/Packing/api/anonymous/waveService/closeWave</closePackWaveAPI>
+                <autoClosePackWaveAPI>http://mcjca048205:8180/Packing/api/anonymous/packingService/packing</autoClosePackWaveAPI>
+                <flexLocationAPI>http://mcjca048116:8180/location_services/1.4/location/range</flexLocationAPI>
+                <wms>tst-app10-wms</wms>
+                <userName>WMQA01</userName>
+                <password>password</password>
+                <pwdobjectid>Misc-Macys-Application-Passive</pwdobjectid>
+                <apolloUserName>#UserName</apolloUserName>
+                <!-- <apolloPassword></apolloPassword> -->
+                <tibcoServerUrl>tcp://tibanc09.federated.fds:7215</tibcoServerUrl>
+                <tibcoUserName>admd2cwms</tibcoUserName>
+                <tibcoPassword />
+                <QueueName6180>M.D2C.WM10.PHEME.MARRIAGEMISSION_6180.PHEMECONNECTORIN.RECEIVE.TALOS.STORE</QueueName6180>
+                <QueueName6690>M.D2C.WM10.PHEME.MARRIAGEMISSION_6690.PHEMECONNECTORIN.RECEIVE.TALOS</QueueName6690>
+                <QueueName6997>M.D2C.WM10.PHEME.WAVECONTROL_6997.PHEMECONNECTORIN.RECEIVE.TALOS</QueueName6997>
+                <QueueName7199>M.D2C.WM10.PHEME.ITEMDWN_7199.PHEMECONNECTORIN.RECEIVE.TALOS.STORE</QueueName7199>
+                <QueueName7010>M.D2C.WM10.PHEME.7010.PHEMECONNECTORIN.RECEIVE.TALOS.STORE</QueueName7010>
+                <routingservice>http://mcjca048230:8180/atlas.routing/rest/Atlas/RoutingService/routePackage/[0]/[1]?printer=[2]&amp;activity=PACKING</routingservice>
+                <activatewaveurl>http://mcjca048205:8080/Picking/api/anonymous/waveService/activateWave</activatewaveurl>
+                <itemStatusurl>http://mcjca048205:8180/Packing/api/anonymous/packingService/packing</itemStatusurl>
+                <packageStatusSortingUrl>http://mcjca048205:8180/Packing/api/anonymous/packingService/package/packing</packageStatusSortingUrl>
+                <Atlasflowurls>
+                    <pressF4>/RFChuteToTote/verifyChuteStatus?selValue=f4&amp;wmURL=null</pressF4>
+                </Atlasflowurls>
+                <isAtlasConfigured>true</isAtlasConfigured>
+                <dataCreationMode>N</dataCreationMode>
+                <facilityAliasId>64</facilityAliasId>
+                <!-- Integrated Picking -->
+                <location>HA02P119</location>
+                <workType>Singles</workType>
+                <endToteCounter>5</endToteCounter>
+                <isEventMsgGeneratedInTable>true</isEventMsgGeneratedInTable>
+                <username>WMQA01</username>
+                <pickingurls>
+                    <loginurl>/login/auth</loginurl>
+                    <loginauthurl>/login/rfProcess?j_username=#user#&amp;j_password=#password#</loginauthurl>
+                    <handheldwithf3>/handheldMenu/processMenuSelection?selValue=f3</handheldwithf3>
+                    <wrkgroupidprompt>/userGroup/validateUserGroup?userGroupId=</wrkgroupidprompt>
+                    <selectpickbyworkid>/handheldMenu/processMenuSelection?selValue=3010</selectpickbyworkid>
+                    <wrkidprompt>/workAssignment/validateAndUpdateWorkId?workId=</wrkidprompt>
+                    <acceptworkiderrormessage>continuePressed=Y</acceptworkiderrormessage>
+                    <toteprompt>/picking/validateScanTote?scanToteId=</toteprompt>
+                    <accepttoteerrormessage>/picking/validateScanTote?continuePressed=Y</accepttoteerrormessage>
+                    <itemprompt>/picking/validateUpc?upc=</itemprompt>
+                    <acceptsitemErrorMsgUrl>/picking/validateUpc?continuePressed=Y</acceptsitemErrorMsgUrl>
+                    <qtyprompt>/picking/validateQty?qty=</qtyprompt>
+                    <locprompt>/picking/validateDropLoc?dropLocId=</locprompt>
+                    <pressedF4>/picking/endTote?continuePressed=Y</pressedF4>
+                    <pressedF9>/picking/lockWorkAsngment?continuePressed=Y</pressedF9>
+                    <pressedF2>/picking/skipLocation</pressedF2>
+                    <pressedF8Shorting>/picking/shortQuantity?selValue=f8</pressedF8Shorting>
+                    <pressedF8>/picking/shortQuantity?continuePressed=Y</pressedF8>
+                    <pressedBack>/picking/back</pressedBack>
+                </pickingurls>
+                <!-- Custom Packing - Pack OB Package URLs -->
+                <custompackingurls>
+                    <handheldwithPackOBPackage>/handheldMenu/processMenuSelection?selValue=322</handheldwithPackOBPackage>
+                    <packagePromptUrl>/CustomPacking/validateOLPN?oLPNBarcode=</packagePromptUrl>
+                    <packagePromptExitUrl>/CustomPacking/scanOLPNExit</packagePromptExitUrl>
+                    <!-- Modified by Meenal below URL -->
+                    <itemPromptUrl>/CustomPacking/itemValidations?itemName=</itemPromptUrl>
+                    <itemPromptF4Url>/CustomPacking/displayItemQtyList?selValue=f4</itemPromptF4Url>
+                    <itemPromptBackUrl>/CustomPacking/scanItemBack</itemPromptBackUrl>
+                    <itemScanAcceptInfoMessageUrl>/CustomPacking/itemValidations?continuePressed=Y</itemScanAcceptInfoMessageUrl>
+                    <itemShortF8Url>/CustomPacking/displayShortingMessage?selValue=f8</itemShortF8Url>
+                    <itemshortAcceptInfoMessageUrl>/customPacking/displayShortingMessage?continuePressed=Y</itemshortAcceptInfoMessageUrl>
+                </custompackingurls>
+                <!-- Move To Packing URLs -->
+                <packingurlsMoveToPacking>
+                    <handheldwithMoveToPacking>/handheldMenu/processMenuSelection?selValue=323</handheldwithMoveToPacking>
+                    <totePromptUrlMoveToPacking>/transferTote/moveToteToPacking?toteNbr=</totePromptUrlMoveToPacking>
+                    <infoMsgtotePromptUrlMoveToPacking1>/transferTote/scanTote?toteNbr=</infoMsgtotePromptUrlMoveToPacking1>
+                    <infoMsgtotePromptUrlMoveToPacking>continuePressed=Y</infoMsgtotePromptUrlMoveToPacking>
+                </packingurlsMoveToPacking>
+                <locatePackage>
+                    <scanPackage>/locatePackage/validatePackage?packageNbr=</scanPackage>
+                    <scanLocation>/locatePackage/locatePackage?packageNumber=</scanLocation>
+                    <scanItem>/locatePackage/itemValidations?packageNumber=</scanItem>
+                    <acceptPkgCmplte>/locatePackage/itemValidations?continuePressed=Y</acceptPkgCmplte>
+                </locatePackage>
+                <packPrintSng>
+                    <scanTote>/PackAndPrint/validateAndFetchDataforScanBarCode?printerBarcode=#PARAM1#&amp;scanBarcode=#PARAM2#</scanTote>
+                </packPrintSng>
+                <mainFeastUrl>http://mcjca048230:8080/atlas.manifesting/rest/Atlas/ManifestingService/DIVERTSHIP/35/#packageNumber#?actualWeight=#actualWeight#</mainFeastUrl>
+                <configPublishTopic>M.D2C.WMS.COMMON.CONFIG.PUBLISH</configPublishTopic>
+            </env>
+        </was>
+        <AppUrls>
+            <HandHeldUrl>http://mcjca048205:8280/HandHeld/mobile/idx</HandHeldUrl>
+            <wmHost>tst-app10-wms</wmHost>
+        </AppUrls>
+        <services>
+            <hostnameForWorkExecution>http://mcjca048205:14180/workexecution_controller_services/1.0/workexecution</hostnameForWorkExecution>
+            <hostnameForRuleClient>http://mcjca048116:10680/flexrules_client_services/1.0/rule/client</hostnameForRuleClient>
+            <hostnameForStorageService>http://mcjca048205:12280/storage_services/1.0/</hostnameForStorageService>
+            <hostnameForPickLocSeq>http://mcjca048116:8580</hostnameForPickLocSeq>
+            <hostnameForContainer>http://mcjca048205:9180</hostnameForContainer>
+            <container>/inventory_services/1.0</container>
+        </services>
+        <restServices>
+            <itemapi>
+                <uri>http://mcjca048205:8010/itemservice/</uri>
+            </itemapi>
+            <appconfig>
+                <uri>http://mcjca048205:5000/aresconfig/busUnit/</uri>
+            </appconfig>
+        </restServices>
+        <aresConfig>
+            <locnNbr>4421</locnNbr>
+            <businessUnit>
+                <macys>71</macys>
+                <bloomingdales>72</bloomingdales>
+            </businessUnit>
+        </aresConfig>
+        <!-- Database Details -->
+        <db>
+            <driver>
+                <classname>oracle.jdbc.driver.OracleDriver</classname>
+            </driver>
+            <wmsuser>
+                <name>MSTTST10</name>
+                <passwordobj>Misc-Macys-Application-Passive-app10wmsuser</passwordobj>
+                <session>120000</session>
+                <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+            </wmsuser>
+            <!-- Requires for Waveless - Please Update According to Enviornment -->
+            <user>
+                <name>MSTTST10</name>
+                <pwdobjectid>Misc-Macys-Application-Passive-app10wmsuser</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+            </user>
+            <!-- End of Waveless -->
+            <talosuser>
+                <name>MSTTST10</name>
+                <pwdobjectid>Misc-Macys-Application-Passive-app10wmsuser</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+            </talosuser>
+            <proteususer>
+                <name>MSTTST10</name>
+                <passwordobj>Misc-Macys-Application-Passive-app10wmsuser</passwordobj>
+                <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+            </proteususer>
+            <!-- <connecturi>jdbc:oracle:thin:@wmstst01db:1521/wmstst01</connecturi> -->
+            <userCLEDB>
+                <name>INTCLE</name>
+                <pwdobjectid>int-cleuser</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@WMSDEV02DB.FEDERATED.FDS:1521/WMSDEV01</connecturi>
+            </userCLEDB>
+            <!-- <connecturiCLE>jdbc:oracle:thin:@WMSDEV02DB.FEDERATED.FDS:1521/WMSDEV01</connecturiCLE> -->
+            <userAtlas>
+                <name>WMASHINT</name>
+                <pwdobjectid>int-atlasuser</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@WMSDEV02DB:1521/WMSDEV3F</connecturi>
+            </userAtlas>
+            <!-- <connecturiAtlas>jdbc:oracle:thin:@WMSDEV02DB:1521/WMSDEV3F</connecturiAtlas> -->
+            <appuser>
+                <name>MSTMBPRD</name>
+                <password />
+                <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+            </appuser>
+            <autouser>
+                <name>WMTSTAUTO</name>
+                <password />
+                <connecturi>jdbc:oracle:thin:@WMSDEV02DB.FEDERATED.FDS:1521/WMBDEV2F</connecturi>
+            </autouser>
+            <!-- Flex needed usernames -->
+            <mstuser>
+                <name>mstst10</name>
+                <pwdobjectid>int-mstuser</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+            </mstuser>
+            <genConfigUser>
+                <name>MSTMBPRD</name>
+                <pwdobjectid>int-mstuser</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+            </genConfigUser>
+            <invuser>
+                <name>invnapp10</name>
+                <pwdobjectid>flex-int-invuser</pwdobjectid>
+                <connecturi>jdbc:Oracle:thin:@wmssbx01.federated.fds:1521/WMSSBX1F</connecturi>
+            </invuser>
+            <aresuser>
+                <name>aresint</name>
+                <pwdobjectid>Misc-Macys-Application-Passive-aresintuser</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@WMSSBX01.federated.fds:1521/WMSSBX1F</connecturi>
+            </aresuser>
+            <bulkschema>
+                <name>MIBLKINT</name>
+                <pwdobjectid>Misc-Macys-Application-Passive-aresintbulkschema</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@wmssbx01:1521/wmssbx1f</connecturi>
+            </bulkschema>
+            <osmuser>
+                <name>OSMMBPRDM</name>
+                <pwdobjectid>Misc-Macys-Application-Passive-INTosmmbprdmuser</pwdobjectid>
+                <connecturi>jdbc:oracle:thin:@WMSDEV02DB:1521/WMBDEV2F</connecturi>
+            </osmuser>
+            <atlas>
+                <user-OSM>
+                    <name>OSMTST10</name>
+                    <pwdobjectid>Misc-Macys-Application-Passive-app10osmuser</pwdobjectid>
+                    <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+                </user-OSM>
+                <user-wms>
+                    <name>MSTTST10</name>
+                    <pwdobjectid>Misc-Macys-Application-Passive-app10wmsuser</pwdobjectid>
+                    <connecturi>jdbc:oracle:thin:@wmsdev02db:1521/wmbdev2f</connecturi>
+                </user-wms>
+                <user-atlas>
+                    <name>WMASHQAT</name>
+                    <password>Misc-Macys-Application-Passive-WMASHQAT</password>
+                    <connecturi>jdbc:oracle:thin:@WMSDEV02DB:1521/WMSDEV3F</connecturi>
+                </user-atlas>
+            </atlas>
+        </db>
+        <!-- END of Database Details -->
+        <WebService>
+            <packageService>http://vcia4324:13090/package.services</packageService>
+            <common-data-service>http://vcia4328:8780/common.data.services</common-data-service>
+            <opt-rating-service>http://#SERVERNAME#:8780/atlas.rating/rest</opt-rating-service>
+            <opt-routing-service>http://#SERVERNAME#:8780/atlas.routing/rest</opt-routing-service>
+            <opt-manifesting-service>http://#SERVERNAME#:8780/atlas.manifesting/rest</opt-manifesting-service>
+            <closeoutservice-manifest>http://#SERVERNAME#:8080/atlas.manifesting/rest</closeoutservice-manifest>
+            <print-manifest-service>http://#SERVERNAME#:8080/atlas.printing/rest</print-manifest-service>
+            <divertShipService>http://mcjca048230:8780/atlas.manifesting/rest/Atlas/ManifestingService/DIVERTSHIP</divertShipService>
+        </WebService>
+        <reservedMslArea>BC3</reservedMslArea>
+        <EmptyLocation>MSLPatrolling/emptyLocationForMSLPatrolling?toteNumber</EmptyLocation>
+        <emptyLocationContinueURL>customPacking/displayShortingMessage?continuePressed=Y</emptyLocationContinueURL>
+        <fillLocationNumber>4421</fillLocationNumber>
+        <fillZLLocationNbr>870</fillZLLocationNbr>
+        <whseId>44</whseId>
+        <whseNo>02</whseNo>
+    </config>
+</document>
